@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel = "stylesheet" href = "{% static 'stylesheet.css' %}">
     {% block head %}
     {% endblock %}
@@ -11,7 +14,13 @@
     <title>Title</title>
 </head>
 <body>
+
+<div class = "title page-header">
+    <h2>My Blog</h2>
+</div>
     {% block body %}
+
+
     {% endblock %}
 
 </body>

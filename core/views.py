@@ -18,3 +18,9 @@ def article_detail(request, pk):
     post = Post.objects.get(pk=pk)
 
     return render(request, 'article_detail.html', dict(post=post))
+
+def Hello(request):
+
+    return render(request, 'profile.html')
+
+

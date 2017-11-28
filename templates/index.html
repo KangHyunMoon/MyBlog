@@ -6,14 +6,20 @@
 <title>블로그</title>
 {% endblock %}
 
+
 {% block body %}
+{% include "menubar.html" %}
+
+<div class = "content">
 {% for post in posts %}
 <h1>
     <a href = "{% url 'core_article_detail' pk=post.pk %}">
     {{ post.title }}
+        <span class="label label-default">New</span>
     </a>
 </h1>
 {% endfor %}
+</div>
 {% endblock %}
 
 {{ A | length }}
